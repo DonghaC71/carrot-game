@@ -1,0 +1,111 @@
+body {
+  background-color: #222831;
+  margin: 0;
+}
+.container {
+  margin: 40px auto;
+  width: 1024px;
+  height: 576px;
+  background-image: url('img/background.png');
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.game__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: bisque;
+  border: 5px solid black;
+  border-radius: 15px;
+  transition: transform 200ms ease;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.timer {
+  margin-top: 10px;
+  width: 220px;
+  padding: 0 5px;
+  background-color: azure;
+  border: 5px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+.score {
+  margin-top: 7px;
+  width: 70px;
+  height: 70px;
+  background-color: lightsalmon;
+  border: 5px solid black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.text {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.items {
+  width: 100%;
+  height: 50%;
+}
+img,
+.text {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.carrot,
+.bug {
+  position: absolute;
+  visibility: hidden;
+  transition: transform 100ms ease;
+}
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#he:hover {
+  transform: scale(1.5);
+}
+.showup {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  transform: translateY(300px);
+  background-color: rgba(34, 40, 49, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  visibility: hidden;
+}
+.text i {
+  color: tomato;
+  margin-left: 9px;
+}
+.start {
+  position: absolute;
+  transform: translateY(380px);
+  color: white;
+}
